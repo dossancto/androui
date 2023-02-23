@@ -2,7 +2,7 @@ use std::{env, path::PathBuf};
 
 use rust_search::SearchBuilder;
 
-fn get_manifest_path<'a>() -> Vec<String> {
+fn get_manifest_path() -> Vec<String> {
     let p = get_current_working_dir().unwrap();
 
     let search: Vec<String> = SearchBuilder::default()
